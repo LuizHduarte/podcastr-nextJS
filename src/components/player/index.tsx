@@ -95,7 +95,7 @@ export function Player(){
         </div>
 
         {episode && (
-          <audio src={episode.url} autoPlay ref={audioRef} onEnd={handleEpisodeEnded} loop={isLooping} onLoadedMetadata={setupProgressListener} />
+          <audio src={episode.url} autoPlay ref={audioRef} onEnded={handleEpisodeEnded} loop={isLooping} onLoadedMetadata={setupProgressListener} />
         )}
 
         <div className={style.buttons}>
